@@ -1,0 +1,144 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Aplicación de Monitoreo con informes de Logs en tiempo real.",
+      "description": "Es una aplicación que consiste en monitorear URLs o APIs que uno le provee. En la que te testea si la aplicación se encuentra en funcionamiento o no. En el código brindado uno puede modificar cada cierto tiempo que desee que le llegue estos Logs. Estos poseen tres niveles de criticidad ['low', 'medium', 'high']. Lo hicé con un enfoque de Clean Architecture para el desarrollo de la aplicación, usando entidades, casos de uso, separación de responsabilidades únicas. Utilizó MongoDB como base de datos para el almacenamiento de los informes, pero estos también son enviados al Gmail de uno mismo utilizando Nodemailer como herramienta.",
+      "technologies": {
+        "patterns": ["Clean Architecture"],
+        "languages": ["TypeScript"],
+        "backend": ["Node.js"],
+        "frontend": ["React", "Redux"],
+        "database": ["MongoDB"]
+      },
+      "github": "https://github.com/juanjoaquin/node-noc-app",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+      
+     
+    },
+    {
+      "id": 2,
+      "name": "Gestor de empleados de empresa con Laravel y Filament.",
+      "description": "Proyecto realizado con Laravel para el Backend con Blade para la View, utilizando Filament como librería para el Diseño UI. Es un gestor de empleados, donde uno posee un panel de administrador que se puede agregar, editar, y eliminar empleados. Así como también gestionar los datos de estos de una manera estructurada y sencillas. Utilizando MySQL para la base de datos y las migraciones. Aplicando una relación principalmente de uno a muchos, entre el gestor y los empleados. Los empleados y sus hábilidades, ciudad, país, etc.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel con Blade"],
+        "backend": ["", ""],
+        "frontend": ["", ""],
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/username/project-repo",
+            "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 3,
+      "name": "Blog aplicando Roles y Permisos con Laravel.",
+      "description": "En este proyecto aplico un sistema de gestión de roles y permisos en Laravel como backend y Blade para las views, utilizando el paquete de Spatie para gestionar los roles y permisos, y Breeze para la autenticación de los usuarios y el administrador. Usando MySQL para la base de datos y las migraciones. En la parte del Usuario se puede gestionar la creación, la eliminación y la editación de distintos posts como si fuese un foro, mientras que del lado del administrador uno tiene un rango mayor que puede eliminar, editar los posteos de los usuarios. Así como también asignarle a los distintos usuarios roles como 'moderador', 'usuario', o 'invitado' para que uno pueda ver los posteos como invitado pero sin el permiso de crearlos. ",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel con Blade"],
+        "backend": [""],
+        "frontend": ["", ""],
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/username/project-repo",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+      
+     
+    },
+    {
+      "id": 4,
+      "name": "Gestor de alumnos con notas, detalles, y asistencia.",
+      "description": "Es una aplicación en la que 'simulas' ser un profesor y llevas el control de tus alumnos. Aplicando una relación de uno a uno, en las que el alumno puede tener únicamente una asistencia, nota, y materia. Estando todo conectado. Full responsive, utilizando React como frontend y Laravel para el backend. Para la base de datos y las migraciones utilizó MySQL. Siguendo la arquitectura MVC para el desarrollo de la aplicación, y teniendo un Controller para cada uno de ellos aplicando el principio de responsabilidad única. ",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel como backend"],
+        "backend": ["React como frontend."],
+        "frontend": ["", ""],
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/username/project-repo",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 5,
+      "name": "App de atención de Tickets con Websockets",
+      "description": "Es una aplicación desarrollada principalmente con TypeScript y Express js, en que la idea del proyecto es simular una 'aplicación de atención mediante tickets' en la que uno puede generar tickets y atenderlos. A través de Websockets se pueden utilizar distintas pantallas en la que se envía la información de que ticket es el que se generá, que ticket es el que se esta atendiendo, y en que 'escritorio' o 'computadora' se está atendiendó a cada uno. Como view únicamente utilizó JavaScript y HTML ya que la ídea del proyecto es principalmente en el backend.",
+      "technologies": {
+        "patterns": ["Clean Architecture"],
+        "languages": ["TypeScript"],
+        "backend": ["Node.js ", "Express.js"],
+        "frontend": ["React", "Redux"],
+        "database": ["MongoDB"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/username/project-repo",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 6,
+      "name": "CRUD de Notas hecho con Laravel y Blade ",
+      "description": "Es un CRUD de Notas hecho con Laravel como backend y utilizando Blade como View para el frontend. En donde utilizó MySQL como la Base de datos y las migraciones correspondientes. Como arquitectura utilizó MVC para el desarrollo de la aplicación.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel con Blade"],
+        "backend": ["", ""],
+        "frontend": ["", ""],
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/username/project-repo",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 7,
+      "name": "Bootcamp con React js",
+      "description": "Aplicación únicamente con React que hice a principio para un proyecto, lo subó para mostrar que está fue de las primeras páginas que desarrolle útilizando React como framework, aplicando distintas cosas como validaciones en formulario, haciendola full responsive, y demás.",
+      "technologies": {
+        "patterns": [""],
+        "languages": ["React"],
+        "backend": ["", ""],
+        "frontend": ["", ""],
+        "database": ["JSON"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/username/project-repo",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+    }
+
+
+  ]
+}
