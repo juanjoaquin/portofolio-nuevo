@@ -15,7 +15,7 @@ export const Proyecto2 = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('../../../../public/ProjectsJSON.json');
+                const response = await axios.get('/ProjectsJSON.json');
                 setDataApi(response.data.projects[1]); // Guardar el primer proyecto
             } catch (error) {
                 console.error("Error fetching data: ", error);

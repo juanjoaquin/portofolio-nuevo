@@ -11,13 +11,13 @@ import img5 from "../../../../public/images/project-crud-laravel/show-note.jpg"
 
 
 export const Proyecto6 = () => {
-    const [dataApi, setDataApi] = useState(null); // Cambia el estado inicial a `null`
+    const [dataApi, setDataApi] = useState(null); 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('../../../../public/ProjectsJSON.json');
-                setDataApi(response.data.projects[5]); // Guardar el tercer proyecto
+                const response = await axios.get('/ProjectsJSON.json');
+                setDataApi(response.data.projects[5]); 
             } catch (error) {
                 console.error("Error fetching data: ", error);
             }

@@ -8,13 +8,13 @@ import img4 from '../../../../public/images/laravel-breeze-permisos/form-permiss
 
 
 const Proyecto3 = () => {
-    const [dataApi, setDataApi] = useState(null); // Cambia el estado inicial a `null`
+    const [dataApi, setDataApi] = useState(null); 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('../../../../public/ProjectsJSON.json');
-                setDataApi(response.data.projects[2]); // Guardar el tercer proyecto
+                const response = await axios.get('/ProjectsJSON.json');
+                setDataApi(response.data.projects[2]);
             } catch (error) {
                 console.error("Error fetching data: ", error);
             }

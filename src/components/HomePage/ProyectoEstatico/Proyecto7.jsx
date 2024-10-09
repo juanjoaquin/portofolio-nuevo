@@ -8,13 +8,13 @@ import img3 from "../../../../public/images/react-cursos/image-3.jpg"
 
 
 export const Proyecto7 = () => {
-    const [dataApi, setDataApi] = useState(null); // Cambia el estado inicial a `null`
+    const [dataApi, setDataApi] = useState(null); 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('../../../../public/ProjectsJSON.json');
-                setDataApi(response.data.projects[6]); // Guardar el tercer proyecto
+                const response = await axios.get('/ProjectsJSON.json');
+                setDataApi(response.data.projects[6]);
             } catch (error) {
                 console.error("Error fetching data: ", error);
             }
