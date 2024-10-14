@@ -13,7 +13,7 @@ export const Socials = ({darkMode}) => {
         <div className="pt-4 m-4 text-start md:mx-auto max-w-screen-md lg:max-w-screen-lg md:p-4">
             
         <div className="flex items-center mb-2 gap-2">
-                <h1 className="font-roboto text-3xl font-bold tracking-wide ">Redes</h1>
+                <h1 className="font-roboto text-3xl font-bold tracking-wide ">Redes & Github</h1>
 
             </div>
                 <div className="flex items-center gap-3">

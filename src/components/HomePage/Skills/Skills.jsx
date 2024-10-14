@@ -67,11 +67,11 @@ export const Skills = ({darkMode}) => {
       >
             <div className="pt-4 m-4 text-start ">
                 <div className="flex items-center gap-3 md:mx-auto max-w-screen-md lg:max-w-screen-lg">
-                <h1 className="font-montserrat text-base font-semibold tracking-wider opacity-40 ">HABILIDADES</h1>
+                <h1 className="font-montserrat text-base font-semibold tracking-wider opacity-40 ">Skills & tolls</h1>
                 <hr className="w-full border-gray-400"/>
                 </div>
                 <div className="md:mx-auto max-w-screen-md lg:max-w-screen-lg">
-                <h1 className="font-roboto tracking-wide text-3xl pt-3 font-bold">Skills & tools</h1>
+                <h1 className="font-roboto tracking-wide text-3xl pt-3 font-bold">Habilidades</h1>
                 <h3 className="font-montserrat text-grey-text pt-3 font-medium text-lg lg:max-w-2xl">Estos son los lenguajes y frameworks que útilizo cotidianamente para el desarrollo de mis aplicaciones. </h3>
 
                 </div>
@@ -98,42 +98,42 @@ export const Skills = ({darkMode}) => {
                     {message === "Tech" ? (
                         <div className="flex flex-wrap justify-center lg:grid lg:grid-cols-4 lg:gap-4  lg:max-w-screen-lg lg:mx-auto">
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={laravelsvg} alt="" />
+                                <img className="w-20 mb-2" src={laravelsvg} alt="laravel" />
                                 <span className="font-bold">Laravel</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={js} alt="" />
+                                <img className="w-20 mb-2" src={js} alt="javascript" />
                                 <span className="font-bold">JavaScript</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={nextjs} alt="" />
+                                <img className={` ${darkMode ? 'bg-white' : 'bg-white rounded-3xl'} w-20 mb-2` } src={nextjs} alt="next" />
                                 <span className="font-bold">NextJs</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={nodejs} alt="" />
+                                <img className="w-20 mb-2" src={nodejs} alt="nodejs" />
                                 <span className="font-bold">NodeJs</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={php} alt="" />
+                                <img className="w-20 mb-2" src={php} alt="php" />
                                 <span className="font-bold">Php</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={react} alt="" />
+                                <img className="w-20 mb-2" src={react} alt="reactjs" />
                                 <span className="font-bold">ReactJs</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={typescript} alt="" />
+                                <img className="w-20 mb-2" src={typescript} alt="typescript" />
                                 <span className="font-bold">TypeScript</span>
                             </div>
 
                             <div className="p-3 px-8 m-2 border-solid border-2 border-zinc-200 rounded-lg text-center shadow-lg">
-                                <img className="w-20 mb-2" src={mysql} alt="" />
+                                <img className="w-20 mb-2" src={mysql} alt="mysql" />
                                 <span className="font-bold">MySQL</span>
                             </div>
 

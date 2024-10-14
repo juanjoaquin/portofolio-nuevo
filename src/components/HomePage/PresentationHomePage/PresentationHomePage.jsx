@@ -43,14 +43,14 @@ export const PresentationHomePage = () => {
         >
 
           <div className="m-4 md:p-4 max-w-screen-md lg:max-w-screen-lg md:mx-auto text-start md:text-start" ref={ref}>
-            <h1 className="font-montserrat text-sm tracking-wider">JUAN M. JOAQUIN</h1>
+            <h1 className="pt-4 font-montserrat text-sm tracking-wider">JUAN M. JOAQUIN</h1>
             <h1 className="font-roboto tracking-wide text-3xl pt-3 font-bold md:text-4xl ">Backend & frontend developer</h1>
             <p className="font-montserrat md:text-xl text-grey-text pt-3 font-medium max-w-3xl">
-            Hola, soy Juan, estudió programación. Me gusta desarrollar aplicaciones útiles y funcionales. Desarrollo en el lado del servidor como en la interfaz de usuario, buscando crear productos que mejoren la experiencia del usuario. 
+            Hola, soy Juan, estudio programación. Me gusta desarrollar aplicaciones útiles y funcionales. Desarrollo del servidor como en la interfaz de usuario. Buscando crear productos que mejoren la experiencia del usuario. 
             </p>
   
             
-            <div className="flex justify-center gap-10 pt-5 md:justify-start ">
+            <div className="flex  gap-10 pt-5 md:justify-start ">
               <Link
               to="projects" spy={true} smooth={true} offset={-100} duration={500}
                 className="p-2 rounded-lg bg-gray-900 hover:bg-gray-700 font-montserrat font-semibold text-white cursor-pointer"

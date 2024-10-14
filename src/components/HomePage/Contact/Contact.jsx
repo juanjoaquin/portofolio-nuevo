@@ -35,10 +35,8 @@ export const Contact = () => {
             <hr className="w-full border-gray-400"/>
             </div>
             <div className="flex items-center pt-3 gap-2">
-                <h1 className="font-roboto text-3xl font-bold tracking-wide ">Contact Me</h1>
-                <span className="material-symbols-outlined">
-                    arrow_forward
-                </span>
+                <h1 className="font-roboto text-3xl font-bold tracking-wide ">Contáctame</h1>
+
             </div>
             <div className="pt-3 flex flex-wrap ">
                 <p className="font-montserrat text-gray-600 font-medium text-lg">Sentite libre de escribirme un email cuando desees, yo constantemente checkeo el buzón de entrada. </p>
