@@ -1,12 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import imagen1 from '../../../../public/images/gestor-empleados/imagen1.jpg'
+import imagen2 from '../../../../public/images/gestor-empleados/imagen2.jpg'
+import imagen3 from '../../../../public/images/gestor-empleados/imagen3.jpg'
+import imagen4 from '../../../../public/images/gestor-empleados/imagen4.jpg'
+import imagen5 from '../../../../public/images/gestor-empleados/imagen5.jpg'
+import imagen6 from '../../../../public/images/gestor-empleados/imagen6.jpg'
 
 
-import img10 from '../../../../public/images/laravel-filament/filament-desktop.png'
-import img11 from '../../../../public/images/laravel-filament/filament-employees.png'
-import img12 from '../../../../public/images/laravel-filament/filament-cities.png'
-import img13 from '../../../../public/images/laravel-filament/filament-dash.png'
+
+
 
 
 export const Proyecto2 = () => {
@@ -54,7 +58,7 @@ export const Proyecto2 = () => {
                     <div className="pt-4">
                         <h1 className="font-montserrat text-base font-normal tracking-widest text-gray-400">GITHUB REPOSITORIO & LIVE HOST</h1>
                         <div className="inline-block">
-                            <Link to="https://github.com/juanjoaquin/laravel-filament-employees" className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
+                            <Link to={`${dataApi.github}`} className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
                             <br />
                             <p className=" font-montserrat pt-2 font-medium ">{dataApi.live_demo}</p>
                         </div>
@@ -70,10 +74,13 @@ export const Proyecto2 = () => {
             <div className="flex justify-center pt-10 lg:max-w-screen-lg lg:mx-auto">
 
                 <div className="pt-4 space-y-8 ">
-                    <img className="w-full  shadow-md" src={img10} alt="" />
-                    <img className="w-full  shadow-md" src={img11} alt="" />
-                    <img className="w-full  shadow-md" src={img12} alt="" />
-                    <img className="w-full  shadow-md" src={img13} alt="" />
+                <img className="w-full  shadow-md" src={imagen1} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen2} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen3} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen4} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen5} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen6} alt="" /> 
+
 
                 </div>
             </div>

@@ -11,9 +11,12 @@ import Proyecto3 from './components/HomePage/ProyectoEstatico/Proyecto3'
  import { Proyecto4 } from './components/HomePage/ProyectoEstatico/Proyecto4'
 import { Proyecto5 } from './components/HomePage/ProyectoEstatico/Proyecto5'
 import { Proyecto7 } from './components/HomePage/ProyectoEstatico/Proyecto7'
+import { Proyecto8 } from './components/HomePage/ProyectoEstatico/Proyecto8'
 import { Proyecto6 } from './components/HomePage/ProyectoEstatico/Proyecto6'
+import {Proyecto9} from './components/HomePage/ProyectoEstatico/Proyecto9'
 import { Socials } from './components/HomePage/Socials/Socials'
 import { Skills } from './components/HomePage/Skills/Skills'
+import { Proyecto10 } from './components/HomePage/ProyectoEstatico/Proyecto10'
 
 
 // import { ProjectID } from './components/HomePage/Projects/ProjectID'
@@ -56,6 +59,12 @@ function App() {
     <Route path="/proyectos/5" element={<Proyecto5 />} />
     <Route path="/proyectos/6" element={<Proyecto6 />} />
     <Route path="/proyectos/7" element={<Proyecto7 />} />
+    <Route path="/proyectos/8" element={<Proyecto8 />} />
+    <Route path="/proyectos/9" element={<Proyecto9 />} />
+    <Route path="/proyectos/10" element={<Proyecto10 />} />
+
+
+
     <Route path="#" element={<Socials darkMode={darkMode}/>}/>
     <Route path="#" element={<Skills darkMode={darkMode}/>}/>
     

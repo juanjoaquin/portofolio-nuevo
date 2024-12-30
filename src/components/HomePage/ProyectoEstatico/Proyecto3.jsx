@@ -1,13 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from '../../../../public/images/laravel-breeze-permisos/index-1.jpg'
-import img2 from '../../../../public/images/laravel-breeze-permisos/create-form-2.jpg'
-import img3 from '../../../../public/images/laravel-breeze-permisos/permissions-3.jpg'
-import img4 from '../../../../public/images/laravel-breeze-permisos/form-permissions-4.jpg'
+import img1 from "../../../../public/images/restaurant/auth1.jpg"
+import img2 from "../../../../public/images/restaurant/general2.jpg"
+import img3 from "../../../../public/images/restaurant/mesas3.jpg"
+import img4 from "../../../../public/images/restaurant/menu4.jpg"
+import img5 from "../../../../public/images/restaurant/clientes5.jpg"
+import img6 from "../../../../public/images/restaurant/pedidos6.jpg"
+import img7 from "../../../../public/images/restaurant/menus-pedidos7.jpg"
+import img8 from "../../../../public/images/restaurant/pagos-pedidos8.jpg"
 
 
-const Proyecto3 = () => {
+
+export const Proyecto3 = () => {
     const [dataApi, setDataApi] = useState(null); 
 
     useEffect(() => {
@@ -23,9 +28,9 @@ const Proyecto3 = () => {
         fetchData();
     }, []);
 
-    // Verifica si dataApi es null antes de intentar acceder a sus propiedades
+
     if (!dataApi) {
-        return <div>Cargando...</div>; // Muestra un mensaje de carga o un spinner
+        return <div>Cargando...</div>;
     }
 
     return (
@@ -53,7 +58,7 @@ const Proyecto3 = () => {
                     <div className="pt-4">
                         <h1 className="font-montserrat text-base font-normal tracking-widest text-gray-400">GITHUB REPOSITORIO & LIVE HOST</h1>
                         <div className="inline-block">
-                            <Link to="https://github.com/juanjoaquin/laravel-role-permissions-breeze" className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
+                            <Link to="https://github.com/juanjoaquin/restapi-websockets-express" className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
                             <br />
                             <p className=" font-montserrat pt-2 font-medium ">{dataApi.live_demo}</p>
                         </div>
@@ -65,18 +70,22 @@ const Proyecto3 = () => {
                 </div>
             </div>
 
-
             <div className="flex justify-center pt-10 lg:max-w-screen-lg lg:mx-auto">
 
 
-                <div className="pt-4 space-y-8 ">
-                    <img className="w-full  shadow-md" src={img1} alt="" />
-                    <img className="w-full  shadow-md" src={img2} alt="" />
-                    <img className="w-full  shadow-md" src={img3} alt="" />
-                    <img className="w-full  shadow-md" src={img4} alt="" />
+                <div className="pt-4 space-y-8 flex flex-col ">
+                    <img className="w-full  shadow-lg" src={img1} alt="" />
+                    <img className="w-full  shadow-lg" src={img2} alt="" />
+                    <img className="w-full  shadow-lg" src={img3} alt="" />
+                    <img className="w-full  shadow-lg" src={img4} alt="" />
+                    <img className="w-full  shadow-lg" src={img5} alt="" />
+                    <img className="w-full  shadow-lg" src={img6} alt="" />
+                    <img className="w-full  shadow-lg" src={img7} alt="" />
+                    <img className="w-full  shadow-lg" src={img8} alt="" />
 
                 </div>
             </div>
+
 
 
             <div className="flex justify-center items-center  pt-4 text-center font-roboto font-semibold text-xl">
@@ -103,3 +112,10 @@ const Proyecto3 = () => {
 };
 
 export default Proyecto3;
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link as RouterLink } from "react-router-dom"; // Importa Link de react-router-dom
+import { Link as RouterLink } from "react-router-dom"; 
 import { Link } from "react-scroll";
 import '../../App.css';
 
@@ -28,7 +28,7 @@ export const NavBar = ({ darkMode, setDarkMode }) => {
                   
                     <button
                         onClick={() => setDarkMode(!darkMode)}
-                        className={`p-2 rounded transition-all duration-500 ${darkMode ? 'bg-gray-700' : 'bg-gray-300'} text-white`}
+                        className={`p-2 rounded transition-all duration-500 ${darkMode ? 'bg-white' : 'bg-gray-200'} text-white`}
                     >
                         {darkMode ? (
                             <span className="material-symbols-outlined">light_mode</span>

@@ -1,14 +1,18 @@
 import React, { useEffect, useRef } from "react";
-import { delay, motion, useAnimation, useInView } from "framer-motion";
-import dashboard from '../../../../public/images/dashboard.png'
+import { motion, useAnimation, useInView } from "framer-motion";
 import "../../../App.css"
 import projectOneImage from '../../../../public/images/noc/code.png'
-import projectTwoImage from "../../../../public/images/laravel-filament/empleados.png"
-import projectThreeImage from "../../../../public/images/laravel-breeze-permisos/contenido.png"
+import projectTwoImage from '../../../../public/images/gestor-empleados/portada2.png'
+import projectThreeImage from '../../../../public/images/restaurant/portada.png'
 import projectFourdImage from "../../../../public/images/laravel-profesor/indicecode.png"
 import projectFiveImage from '../../../../public/images/node-tickets/codecode.png'
-import projectSixImage from '../../../../public/images/project-crud-laravel/codeimage.png'
-import projectSevenImage from '../../../../public/images/codeimage.png'
+import projectSixImage from '../../../../public/images/next-restapi/portada.png'
+
+import projectSevenImage from '../../../../public/images/devstagram/portada.png'
+import projectEightImage from '../../../../public/images/laravel-breeze-permisos/contenido.png'
+import projectNineImage from '../../../../public/images/codeimage.png'
+import projectTenImage from '../../../../public/images/project-crud-laravel/codeimage.png'
+
 
 import { Link } from "react-router-dom";
 
@@ -30,7 +34,7 @@ export const Projects = () => {
 
     const ref3 = useRef(null);
     const isInView3 = useInView(ref3, { once: true });
-    const firstControls = useAnimation();
+    const threeControls = useAnimation();
 
     //- Nuevos controls
 
@@ -50,6 +54,18 @@ export const Projects = () => {
     const isInView7 = useInView(ref7, { once: true });
     const sevenControls = useAnimation();
 
+    const ref8 = useRef(null);
+    const isInView8 = useInView(ref8, { once: true });
+    const eigthControls = useAnimation();
+
+    const ref9 = useRef(null);
+    const isInView9 = useInView(ref9, { once: true });
+    const nineControls = useAnimation();
+
+    const ref10 = useRef(null);
+    const isInView10 = useInView(ref10, { once: true });
+    const tenControls = useAnimation();
+
 
     useEffect(() => {
         if (isInView) {
@@ -65,11 +81,10 @@ export const Projects = () => {
 
     useEffect(() => {
         if (isInView3) {
-            firstControls.start("visible");
+            threeControls.start("visible");
         }
     }, [isInView3]);
 
-    //- Nuevos controls
 
     useEffect(() => {
         if (isInView4) {
@@ -95,6 +110,24 @@ export const Projects = () => {
         }
     }, [isInView7]);
 
+    useEffect(() => {
+        if (isInView8) {
+            eigthControls.start("visible");
+        }
+    }, [isInView8]);
+
+    useEffect(() => {
+        if (isInView9) {
+            nineControls.start("visible");
+        }
+    }, [isInView9]);
+
+    useEffect(() => {
+        if (isInView10) {
+            tenControls.start("visible");
+        }
+    }, [isInView10]);
+
 
 
 
@@ -115,7 +148,7 @@ export const Projects = () => {
 
                     <h1 className="font-roboto tracking-wide text-3xl pt-3 font-bold">Proyectos</h1>
                     <p className="font-montserrat md:text-xl text-grey-text pt-3 font-medium max-w-3xl">
-                    Me encuentró desarrollando constantemente proyectos para mejorar mi lógica y habilidades. Estos son algunos de los que realice.
+                        Me encuentró desarrollando constantemente proyectos para mejorar mi lógica y habilidades. Estos son algunos de los que realice.
                     </p>
                 </div>
 
@@ -163,18 +196,18 @@ export const Projects = () => {
 
                     >
                         <Link to="/proyectos/2" >
-                            <div ref={ref2} className="bg-orange-600  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                            <div ref={ref2} className="bg-gradient-to-l from-teal-300 to-teal-600  m-4 shadow-lg transition transform duration-300 hover:scale-105">
 
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Gestor de empleados de empresa.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Sistema integral de Gestión de Recursos Humanos</h5>
                                     </div>
 
                                 </div>
 
                                 <div className="overflow-hidden">
-                                    <img className="ml-20 rounded-tl-lg" src={projectTwoImage} alt="" />
+                                    <img className="ml-2  rounded-tl-lg" src={projectTwoImage} alt="" />
                                 </div>
 
 
@@ -186,7 +219,7 @@ export const Projects = () => {
 
                     <motion.div
                         initial="hidden"
-                        animate={firstControls}
+                        animate={threeControls}
                         variants={{
                             hidden: { opacity: 0, y: -75 },
                             visible: { opacity: 1, y: 0 },
@@ -195,7 +228,7 @@ export const Projects = () => {
 
                     >
                         <Link to="/proyectos/3" >
-                            <div ref={ref3} className="bg-red-900  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                            <div ref={ref3} className="bg-gradient-to-r from-cyan-500 to-blue-500  m-4 shadow-lg transition transform duration-300 hover:scale-105">
 
                                 <div className="overflow-hidden ml-5 ">
                                     <img className=" rounded-bl-lg rounded-tl-lg mt-4" src={projectThreeImage} alt="" />
@@ -204,7 +237,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Foro, aplicando roles y permisos.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Manejo de Restaurante: Mesas, Clientes y Pagos.</h5>
                                     </div>
 
 
@@ -229,12 +262,12 @@ export const Projects = () => {
 
                     >
                         <Link to="/proyectos/4" >
-                            <div ref={ref4} className="bg-indigo-900  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                            <div ref={ref4} className="bg-gradient-to-tr from-indigo-500 to-indigo-400  m-4 shadow-lg transition transform duration-300 hover:scale-105">
 
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Gestor de alumnos, notas y asistencias. </h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Sistema de Profesor: Alumnos, Notas y Asistencia. </h5>
                                     </div>
 
                                 </div>
@@ -289,12 +322,12 @@ export const Projects = () => {
 
                     >
                         <Link to="/proyectos/6" >
-                            <div ref={ref6} className="bg-green-800  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                            <div ref={ref6} className="bg-gradient-to-r from-amber-500 to-amber-600  m-4 shadow-lg transition transform duration-300 hover:scale-105">
 
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">CRUD: Bloc de notas.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Rest API Full, y Server Actions.</h5>
                                     </div>
 
                                 </div>
@@ -319,12 +352,12 @@ export const Projects = () => {
 
                     >
                         <Link to="/proyectos/7" >
-                            <div ref={ref7} className="bg-gray-700  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                            <div ref={ref7} className="bg-gradient-to-t from-slate-300 to-slate-500  m-4 shadow-lg transition transform duration-300 hover:scale-105">
 
                                 <div className="p-8">
-                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FRONTEND</h4>
+                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Página de Bootcamp para IT.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Clon de Red Social con likes, posts y followers.</h5>
                                     </div>
 
                                 </div>
@@ -334,6 +367,79 @@ export const Projects = () => {
                                 </div>
 
 
+                            </div>
+                        </Link>
+                    </motion.div>
+
+
+                    <motion.div
+                        initial="hidden"
+                        animate={eigthControls}
+                        variants={{
+                            hidden: { opacity: 0, y: -75 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                    >
+                        <Link to="/proyectos/8" >
+                            <div ref={ref8} className="bg-gradient-to-r from-red-700 to-red-800 m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                                <div className="p-8">
+                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
+                                    <div className="">
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Foro, con Roles y Permisos definidos.</h5>
+                                    </div>
+                                </div>
+                                <div className="overflow-hidden mr-5">
+                                    <img className="rounded-tr-lg" src={projectEightImage} alt="" />
+                                </div>
+                            </div>
+                        </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial="hidden"
+                        animate={nineControls}
+                        variants={{
+                            hidden: { opacity: 0, y: -75 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                    >
+                        <Link to="/proyectos/9" >
+                            <div ref={ref9} className="bg-gray-700 m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                                <div className="p-8">
+                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FRONTEND</h4>
+                                    <div className="">
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Página de Bootcamp IT.</h5>
+                                    </div>
+                                </div>
+                                <div className="overflow-hidden ml-5">
+                                    <img className="rounded-bl-lg rounded-tl-lg mt-4" src={projectNineImage} alt="" />
+                                </div>
+                            </div>
+                        </Link>
+                    </motion.div>
+
+                    <motion.div
+                        initial="hidden"
+                        animate={tenControls}
+                        variants={{
+                            hidden: { opacity: 0, y: -75 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+                    >
+                        <Link to="/proyectos/10" >
+                            <div ref={ref10} className="bg-green-800 m-4 shadow-lg transition transform duration-300 hover:scale-105">
+                                <div className="overflow-hidden ml-5">
+                                    <img className="rounded-bl-lg rounded-tl-lg mt-4" src={projectTenImage} alt="" />
+                                </div>
+                                <div className="p-8">
+                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">BACKEND + VIEW</h4>
+                                    <div className="">
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">CRUD: Bloc de notas.</h5>
+                                    </div>
+                                </div>
                             </div>
                         </Link>
                     </motion.div>

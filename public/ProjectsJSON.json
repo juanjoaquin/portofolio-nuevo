@@ -7,6 +7,7 @@
       "technologies": {
         "patterns": ["Clean Architecture"],
         "languages": ["TypeScript"],
+        "responsive": "",
         "backend": ["Node.js"],
         "frontend": ["React", "Redux"],
         "database": ["MongoDB"]
@@ -18,11 +19,12 @@
     },
     {
       "id": 2,
-      "name": "Gestor de empleados de empresa con Laravel y Filament.",
-      "description": "Proyecto realizado con Laravel para el Backend con Blade para la View, utilizando Filament como librería para el Diseño UI. Es un gestor de empleados, donde uno posee un panel de administrador que se puede agregar, editar, y eliminar empleados. Así como también gestionar los datos de estos de una manera estructurada y sencillas. Utilizando MySQL para la base de datos y las migraciones. Aplicando una relación principalmente de uno a muchos, entre el gestor y los empleados. Los empleados y sus hábilidades, ciudad, país, etc.",
+      "name": "Sistema integral de Gestión de Recursos Humanos con empleados de empresa.",
+      "description": "Proyecto realizado con Laravel para el Backend con React para el front, utilizando Tailwind CSS para el diseño. Hecho utilizando como lenguaje el inglés. Es un gestor de empleados que puede utilizar alguien de RRHH, donde uno posee un panel de administrador que se puede agregar, editar, y eliminar empleados. Así como también gestionar los oficios de cada empleado. Utilizando MySQL para la base de datos. Aplicando una relación principalmente de uno a muchos, entre el gestor y los empleados. Los empleados y sus hábilidades, ciudad, país, etc.",
       "technologies": {
         "patterns": ["MVC"],
-        "languages": ["Laravel con Blade"],
+        "languages": ["React js, Laravel y Tailwind CSS"],
+        "responsive": "Full responsive",
         "backend": ["", ""],
         "frontend": ["", ""],
         "database": ["MySQL"]
@@ -33,16 +35,17 @@
         "User authentication",
         "File tracking system"
       ],
-      "github": "https://github.com/username/project-repo",
-            "live_demo": "Actualmente migrando los proyectos a otro host"
+      "github": "https://github.com/juanjoaquin/employees-react-laravel",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
     },
     {
       "id": 3,
-      "name": "Blog aplicando Roles y Permisos con Laravel.",
-      "description": "En este proyecto aplico un sistema de gestión de roles y permisos en Laravel como backend y Blade para las views, utilizando el paquete de Spatie para gestionar los roles y permisos, y Breeze para la autenticación de los usuarios y el administrador. Usando MySQL para la base de datos y las migraciones. En la parte del Usuario se puede gestionar la creación, la eliminación y la editación de distintos posts como si fuese un foro, mientras que del lado del administrador uno tiene un rango mayor que puede eliminar, editar los posteos de los usuarios. Así como también asignarle a los distintos usuarios roles como 'moderador', 'usuario', o 'invitado' para que uno pueda ver los posteos como invitado pero sin el permiso de crearlos. ",
+      "name": "Gestión de Restaurante: Mesas, Clientes, Pagos y Platos.",
+      "description": "Es un proyecto que abarca el manejo de un restaurante. Los mozos poseen una autenticación y pueden gestionar lo que conlleva un restaurante. Se manejan mesas, clientes, platos/menú y pagos de estos platos. Se aplica un filtrado en aquellos elementos que pueden ser repetidos para tener un manejo concreto. Es decir, está realizado para que un cliente pueda ocupar una mesa, está mesa debe tener la misma cantidad de sillas que el/los clientes. Exista una 'cuenta/pago' al que pidió el cliente respectivamente. La cuenta puede ser pagada en cualquier momento, se cobra por valor del menú y por la cantidad de los platos que suman un valor acumulativo, y al final se obtiene un total de todos los montos que fueron pagados, como si fuese un restaurante verdadero.",
       "technologies": {
-        "patterns": ["MVC"],
-        "languages": ["Laravel con Blade"],
+        "patterns": ["MVVM"],
+        "languages": ["React, TypeScript, Laravel y Tailwind CSS"],
+        "responsive": "Full responsive",
         "backend": [""],
         "frontend": ["", ""],
         "database": ["MySQL"]
@@ -61,11 +64,12 @@
     {
       "id": 4,
       "name": "Gestor de alumnos con notas, detalles, y asistencia.",
-      "description": "Es una aplicación en la que 'simulas' ser un profesor y llevas el control de tus alumnos. Aplicando una relación de uno a uno, en las que el alumno puede tener únicamente una asistencia, nota, y materia. Estando todo conectado. Full responsive, utilizando React como frontend y Laravel para el backend. Para la base de datos y las migraciones utilizó MySQL. Siguendo la arquitectura MVC para el desarrollo de la aplicación, y teniendo un Controller para cada uno de ellos aplicando el principio de responsabilidad única. ",
+      "description": "Es un sistema que realicé desde la perspectiva que puede tener un profesor para fácilitar las tareas que conllevan el control de la clase con los alumnos. Tuvé en cuenta que el profesor pueda tener el manejo de, asistencias, de notas, de si el alumno está reprobado o aprobado cumpliendo ciertos requisitos (como x cantidad de asistencias, o x de nota en la matería). Es un CRUD mediano, donde posee distintas relaciones para hacerlo con una lógica entendible y simple.",
       "technologies": {
         "patterns": ["MVC"],
-        "languages": ["Laravel como backend"],
-        "backend": ["React como frontend."],
+        "languages": ["React js, Laravel y Tailwind CSS"],
+        "responsive": "Full responsive",
+        "backend": [""],
         "frontend": ["", ""],
         "database": ["MySQL"]
       },
@@ -75,7 +79,7 @@
         "User authentication",
         "File tracking system"
       ],
-      "github": "https://github.com/username/project-repo",
+      "github": "https://github.com/juanjoaquin/laravel-react-teacher",
       "live_demo": "Actualmente migrando los proyectos a otro host"
     },
     {
@@ -85,6 +89,7 @@
       "technologies": {
         "patterns": ["Clean Architecture"],
         "languages": ["TypeScript"],
+        "responsive": "Full responsive",
         "backend": ["Node.js ", "Express.js"],
         "frontend": ["React", "Redux"],
         "database": ["MongoDB"]
@@ -95,18 +100,40 @@
         "User authentication",
         "File tracking system"
       ],
-      "github": "https://github.com/username/project-repo",
+      "github": "https://github.com/juanjoaquin/restapi-websockets-express",
       "live_demo": "Actualmente migrando los proyectos a otro host"
     },
     {
       "id": 6,
-      "name": "CRUD de Notas hecho con Laravel y Blade ",
-      "description": "Es un CRUD de Notas hecho con Laravel como backend y utilizando Blade como View para el frontend. En donde utilizó MySQL como la Base de datos y las migraciones correspondientes. Como arquitectura utilizó MVC para el desarrollo de la aplicación.",
+      "name": "Rest API Full y Server Actions",
+      "description": "Es un proyecto simple, pero para mostrar que también puedo manejar Next JS. En este caso es un CRUD de 'Todos' donde utilizó Prisma como ORM para la gestión de la Base de Datos. La función de este proyecto consiste que a través de dos componentes distintos puedo manejar la API. Uno desde el consumo común de la misma, y otro a través de Server Actions para sacar el provecho que posee Next JS para simplificar y diferenciar el manejo entre uno del otro",
       "technologies": {
-        "patterns": ["MVC"],
-        "languages": ["Laravel con Blade"],
+        "patterns": ["Rest Full"],
+        "languages": ["Next JS"],
+        "responsive": "No responsive",
         "backend": ["", ""],
         "frontend": ["", ""],
+        "database": ["PostgreSQL con Prisma de ORM"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/nextjs-ts-server",
+       "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 7,
+      "name": "Clon de Red Social con Likes, Followers, Posts y Dropzone",
+      "description": "Es como un clon de Instagram, donde cada usuario posee un perfil propio, puede seguir a otras personas y también ser seguido por otras cuentas. Utilizando Breeze para la autenticación. Tiene la funcionalidad de likes, donde uno puede quitarlas o no, registrandose todo en Base de Datos. También posee la funcionalidad de los comentarios, uno puede comentar en el perfil de otras cuentas. Hay un muro general que aparecerán las fotos de las cuentas que uno sigue. Para las fotos de perfiles utilizó Dropzone, agregandole limitaciones para que la imagen deba cumplir ciertos requisitos, como el tamaño o peso de la misma.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel con Blade para el Front"],
+        "responsive": "Responsive",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
         "database": ["MySQL"]
       },
       "features": [
@@ -115,18 +142,41 @@
         "User authentication",
         "File tracking system"
       ],
-      "github": "https://github.com/username/project-repo",
+      "github": "https://github.com/juanjoaquin/instagram-laravel",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+
+    {
+      "id": 8,
+      "name": "Foro estilo Blog, con Roles y Permisos definidos",
+      "description": "Tomé el enfoque de un Foro estilo de blog donde cada usuario posee un rol y permisos específicos. Utilizando Breeze para aplicar la autenticación. La idea es que esté el usuario con Rol de 'invitado', aquel que puede visitar la página sin estar logueado pero no puede hacer nada lo que si puede un usuario registrado. Está el usuario común que a través de su cuenta puede crear posts, editarlos, borrarlos y comentar en posts de otros usuarios. Y luego a través de los Roles y Permisos, está el 'administrador' que posee el rol principal. Puede eliminar, crear, modificar usuarios-posts-roles-permisos. Crear otros usuarios con rangos menores a él, pero que también son importantes, como el 'moderador' donde puede borrar, o modificar posts de usuarios comunes, pero que su rol esta limitado y se diferencía del administrador principal.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel con Blade para el Front"],
+        "responsive": "Responsive",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/laravel-role-permissions-breeze",
       "live_demo": "Actualmente migrando los proyectos a otro host"
     },
     {
-      "id": 7,
-      "name": "Bootcamp con React js",
-      "description": "Aplicación únicamente con React que hice a principio para un proyecto, lo subó para mostrar que está fue de las primeras páginas que desarrolle útilizando React como framework, aplicando distintas cosas como validaciones en formulario, haciendola full responsive, y demás.",
+      "id": 9,
+      "name": "Página de Bootcamp IT",
+      "description": "Es de mis primeros proyectos hechos, donde no posee una funcionalidad que destaque, pero que lo agregue para dar una idea a los diseños que me gustan desarrollar, y lo que hacía primeramente al empezar con una biblioteca como React",
       "technologies": {
-        "patterns": [""],
-        "languages": ["React"],
+        "patterns": ["."],
+        "languages": ["Laravel con Blade para el Front"],
+        "responsive": "Full responsive",
         "backend": ["", ""],
-        "frontend": ["", ""],
+        "frontend": ["", ""], 
         "database": ["JSON"]
       },
       "features": [
@@ -135,7 +185,28 @@
         "User authentication",
         "File tracking system"
       ],
-      "github": "https://github.com/username/project-repo",
+      "github": "https://github.com/juanjoaquin/React-bootcamp-reupload",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 10,
+      "name": "CRUD: Laravel",
+      "description": "También es uno de mis primeros proyectos, lo agrego para poder mostrar el avance y lo que hacía en mis primeros proyectos. Es un CRUD básico, donde el proyecto es un Bloc de notas donde uno puede crear, verlas dinámicamente, actualizarlas o eliminarlas.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel con Blade para el Front"],
+        "responsive": "Full Responsive",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/Crud-Laravel-responsive",
       "live_demo": "Actualmente migrando los proyectos a otro host"
     }
 

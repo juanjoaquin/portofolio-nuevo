@@ -1,20 +1,22 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../../public/images/react-cursos/image-1.jpg"
-import img2 from "../../../../public/images/react-cursos/image-2.jpg"
-import img3 from "../../../../public/images/react-cursos/image-3.jpg"
-
+import imagen1 from '../../../../public/images/devstagram/auth1.jpg'
+import imagen2 from '../../../../public/images/devstagram/seguimiento2.jpg'
+import imagen3 from '../../../../public/images/devstagram/homepage3.jpg'
+import imagen4 from '../../../../public/images/devstagram/comentarios4.jpg'
+import imagen5 from '../../../../public/images/devstagram/dropzone5.jpg'
+import imagen6 from '../../../../public/images/devstagram/imagenes-perfil6.jpg'
 
 
 export const Proyecto7 = () => {
-    const [dataApi, setDataApi] = useState(null); 
+    const [dataApi, setDataApi] = useState(null); // Cambia el estado inicial a `null` en lugar de `[]`
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('/ProjectsJSON.json');
-                setDataApi(response.data.projects[6]);
+                setDataApi(response.data.projects[6]); // Guardar el primer proyecto
             } catch (error) {
                 console.error("Error fetching data: ", error);
             }
@@ -23,9 +25,8 @@ export const Proyecto7 = () => {
         fetchData();
     }, []);
 
-
     if (!dataApi) {
-        return <div>Cargando...</div>;
+        return <div>Loading...</div>; // Mostrar un mensaje de carga mientras no hay datos
     }
 
     return (
@@ -53,7 +54,7 @@ export const Proyecto7 = () => {
                     <div className="pt-4">
                         <h1 className="font-montserrat text-base font-normal tracking-widest text-gray-400">GITHUB REPOSITORIO & LIVE HOST</h1>
                         <div className="inline-block">
-                            <Link to="https://github.com/juanjoaquin/restapi-websockets-express" className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
+                            <Link to={dataApi.github} className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
                             <br />
                             <p className=" font-montserrat pt-2 font-medium ">{dataApi.live_demo}</p>
                         </div>
@@ -65,37 +66,43 @@ export const Proyecto7 = () => {
                 </div>
             </div>
 
+
             <div className="flex justify-center pt-10 lg:max-w-screen-lg lg:mx-auto">
 
+                <div className="pt-4 space-y-8 ">
+                <img className="w-full  shadow-md" src={imagen1} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen2} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen3} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen4} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen5} alt="" /> 
+                <img className="w-full  shadow-md" src={imagen6} alt="" /> 
 
-                <div className="pt-4 space-y-8 flex flex-col ">
-                    <img className="w-full  shadow-lg" src={img1} alt="" />
-                    <img className="w-full  shadow-lg" src={img2} alt="" />
-                    <img className="w-full  shadow-lg" src={img3} alt="" />
 
                 </div>
             </div>
 
 
 
-            <div className="flex justify-center items-center  pt-4 text-center font-roboto font-semibold text-xl">
+            <div className="flex justify-center items-center pt-4 text-center font-roboto font-semibold text-sm flex-wrap">
+
                 <div className="flex gap-3 items-center ">
                     <div className=" flex items-center text-white bg-indigo-600 p-2 rounded-lg font-roboto hover:bg-indigo-800">
                         <span class="material-symbols-outlined">
                             keyboard_double_arrow_left
                         </span>
-                        <Link to="/proyectos/5">Anterior proyecto </Link>
+                        <Link to="/proyectos/6">Anterior proyecto </Link>
                     </div>
 
                     <div className=" flex items-center text-white bg-indigo-600 p-2 rounded-lg font-roboto hover:bg-indigo-800">
 
-                        <Link to="/proyectos/7"> Siguiente proyecto </Link>
+                        <Link to="/proyectos/8"> Siguiente proyecto </Link>
                         <span class="material-symbols-outlined">
                             double_arrow
                         </span>
                     </div>
 
                 </div>
+
             </div>
         </div>
     );
