@@ -17,6 +17,7 @@ import {Proyecto9} from './components/HomePage/ProyectoEstatico/Proyecto9'
 import { Socials } from './components/HomePage/Socials/Socials'
 import { Skills } from './components/HomePage/Skills/Skills'
 import { Proyecto10 } from './components/HomePage/ProyectoEstatico/Proyecto10'
+import { NotFound } from './components/NotFound/NotFound'
 
 
 // import { ProjectID } from './components/HomePage/Projects/ProjectID'
@@ -67,6 +68,7 @@ function App() {
 
     <Route path="#" element={<Socials darkMode={darkMode}/>}/>
     <Route path="#" element={<Skills darkMode={darkMode}/>}/>
+    <Route path="*" element={<NotFound darkMode={darkMode}/>}/>
     
     {/* <Route path='/projects' element={<Proyectos />}/>
     <Route path='/projects/:id' element={<ProjectID />}/>

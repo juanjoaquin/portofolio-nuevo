@@ -58,7 +58,7 @@ export const Proyecto3 = () => {
                     <div className="pt-4">
                         <h1 className="font-montserrat text-base font-normal tracking-widest text-gray-400">GITHUB REPOSITORIO & LIVE HOST</h1>
                         <div className="inline-block">
-                            <Link to="https://github.com/juanjoaquin/restapi-websockets-express" className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
+                            <Link to={dataApi?.github} className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
                             <br />
                             <p className=" font-montserrat pt-2 font-medium ">{dataApi.live_demo}</p>
                         </div>
