@@ -81,6 +81,7 @@ export const Proyecto11 = () => {
             <div className="flex justify-center pt-10 lg:max-w-screen-lg lg:mx-auto">
 
 
+
                 <div className="pt-4  flex flex-col ">
                     <img className="w-full  shadow-lg" src={img1} alt="" />
                     <img className="w-full  shadow-lg" src={img2} alt="" />
