@@ -208,6 +208,27 @@
       ],
       "github": "https://github.com/juanjoaquin/Crud-Laravel-responsive",
       "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 11,
+      "name": "Laundry App: Sistema de lavanderia con roles de cliente y administrador",
+      "description": "Es un proyecto que realicé full stack. Con Laravel como backend, MySQL para la base de datos, y React js con TypeScript para el front. Aplicando un patrón de diseño, lo hice pensando como si fuese un e-commerce, pero que no tomé toda la modalidad de una como tal. Puede ser manejada desde el usuario y desde un rol de administrador, que controlá el status del delivery, y de las propias ordenes para comprobar si el pago fue aprobado. La vista del administrador está totalmente protegida, a través de las rutas del front, y del back como un middleware. La autenticación la hice con JWT desde el back, y la valido con LocalStorage desde el front. Si el usuario realiza un logout, esté token automáticamente se borra.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel para el backend. React js & TypeScript para el frontend"],
+        "responsive": "Mobile, no desktop",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/Crud-Laravel-responsive",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
     }
 
 

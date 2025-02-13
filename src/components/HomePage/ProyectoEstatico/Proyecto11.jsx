@@ -2,23 +2,32 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../../public/images/project-crud-laravel/index-notes.jpg"
-import img2 from "../../../../public/images/project-crud-laravel/form-notes.jpg"
-import img3 from "../../../../public/images/project-crud-laravel/form-edit.jpg"
-import img4 from "../../../../public/images/project-crud-laravel/index-form-edit.jpg"
-import img5 from "../../../../public/images/project-crud-laravel/show-note.jpg"
+import img1 from "../../../../public/images/laundry-app/portfolio-1-laundry.jpg"
+import img2 from "../../../../public/images/laundry-app/portfolio-2-laundry.jpg"
+import img3 from "../../../../public/images/laundry-app/portfolio-3-laundry.jpg"
+import img4 from "../../../../public/images/laundry-app/portfolio-4-laundry.jpg"
+import img5 from "../../../../public/images/laundry-app/portfolio-5-laundry.jpg"
+import img6 from "../../../../public/images/laundry-app/portfolio-6-laundry.jpg"
+import img7 from "../../../../public/images/laundry-app/portfolio-admin-7-laundry.jpg"
+import img8 from "../../../../public/images/laundry-app/portfolio-admin-8-laundry.jpg"
+import img9 from "../../../../public/images/laundry-app/portfolio-admin-9-laundry.jpg"
+import img10 from "../../../../public/images/laundry-app/portfolio-admin-10-laundry.jpg"
+import img11 from "../../../../public/images/laundry-app/portfolio-admin-11-laundry.jpg"
 
 
 
 
-export const Proyecto10 = () => {
+
+
+
+export const Proyecto11 = () => {
     const [dataApi, setDataApi] = useState(null); 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('/ProjectsJSON.json');
-                setDataApi(response.data.projects[9]); 
+                setDataApi(response.data.projects[10]); 
             } catch (error) {
                 console.error("Error fetching data: ", error);
             }
@@ -72,12 +81,18 @@ export const Proyecto10 = () => {
             <div className="flex justify-center pt-10 lg:max-w-screen-lg lg:mx-auto">
 
 
-                <div className="pt-4 space-y-8 flex flex-col ">
+                <div className="pt-4  flex flex-col ">
                     <img className="w-full  shadow-lg" src={img1} alt="" />
                     <img className="w-full  shadow-lg" src={img2} alt="" />
                     <img className="w-full  shadow-lg" src={img3} alt="" />
                     <img className="w-full  shadow-lg" src={img4} alt="" />
                     <img className="w-full  shadow-lg" src={img5} alt="" />
+                    <img className="w-full  shadow-lg" src={img6} alt="" />
+                    <img className="w-full  shadow-lg" src={img7} alt="" />
+                    <img className="w-full  shadow-lg" src={img8} alt="" />
+                    <img className="w-full  shadow-lg" src={img9} alt="" />
+                    <img className="w-full  shadow-lg" src={img10} alt="" />
+                    <img className="w-full  shadow-lg" src={img11} alt="" />
                 </div>
             </div>
 
@@ -89,12 +104,12 @@ export const Proyecto10 = () => {
                         <span class="material-symbols-outlined">
                             keyboard_double_arrow_left
                         </span>
-                        <Link to="/proyectos/9">Anterior proyecto </Link>
+                        <Link to="/proyectos/10">Anterior proyecto </Link>
                     </div>
 
                     <div className=" flex items-center text-white bg-indigo-600 p-2 rounded-lg font-roboto hover:bg-indigo-800">
 
-                        <Link to="/proyectos/11"> Siguiente proyecto </Link>
+                        <Link to="/proyectos/1"> Volver al primero </Link>
                         <span class="material-symbols-outlined">
                             double_arrow
                         </span>

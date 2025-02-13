@@ -12,6 +12,7 @@ import projectSevenImage from '../../../../public/images/devstagram/portada.png'
 import projectEightImage from '../../../../public/images/laravel-breeze-permisos/contenido.png'
 import projectNineImage from '../../../../public/images/codeimage.png'
 import projectTenImage from '../../../../public/images/project-crud-laravel/codeimage.png'
+import projectElevenImage from '../../../../public/images/laundry-app/portada-3-linkedin.jpg'
 
 
 import { Link } from "react-router-dom";
@@ -65,6 +66,10 @@ export const Projects = () => {
     const ref10 = useRef(null);
     const isInView10 = useInView(ref10, { once: true });
     const tenControls = useAnimation();
+
+    const ref11 = useRef(null);
+    const isInView11 = useInView(ref11, { once: true });
+    const elevenControls = useAnimation();
 
 
     useEffect(() => {
@@ -128,6 +133,12 @@ export const Projects = () => {
         }
     }, [isInView10]);
 
+    useEffect(() => {
+        if (isInView11) {
+            elevenControls.start("visible");
+        }
+    }, [isInView11]);
+
 
 
 
@@ -155,6 +166,37 @@ export const Projects = () => {
 
                 <div className="max-w-screen-md mx-auto lg:max-w-screen-lg grid lg:grid lg:gap-4 lg:grid-cols-2">
 
+                <motion.div
+                        initial="hidden"
+                        animate={elevenControls}
+                        variants={{
+                            hidden: { opacity: 0, y: -75 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+
+                    >
+                        <Link to="/proyectos/11" >
+                            <div ref={ref11} className="bg-gradient-to-b from-sky-500 to-sky-800  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+
+                                <div className="p-8">
+                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
+                                    <div className="">
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Laundry App: Lavanderia con roles de cliente y administrador</h5>
+                                    </div>
+
+                                </div>
+
+
+                                <div className="overflow-hidden mr-5 ">
+                                    <img className=" rounded-tr-lg rounded-br-lg mb-2" src={projectElevenImage} alt="" />
+                                </div>
+
+
+                            </div>
+                        </Link>
+                    </motion.div>
+
                     <motion.div
                         initial="hidden"
                         animate={mainControls}
@@ -171,12 +213,12 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">BACKEND</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">App de Monitoreo con Logs en tiempo real.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">App de Monitoreo con Logs en tiempo real</h5>
                                     </div>
 
                                 </div>
 
-                                <div className=" overflow-hidden  ">
+                                <div className=" overflow-hidden mr-5 ">
                                     <img className=" ml-20 rounded-tl-lg" src={projectOneImage} alt="" />
                                 </div>
 
@@ -237,7 +279,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Manejo de Restaurante: Mesas, Clientes y Pagos.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Manejo de Restaurante: Mesas, Clientes y Pagos</h5>
                                     </div>
 
 
@@ -267,7 +309,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Sistema de Profesor: Alumnos, Notas y Asistencia. </h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Sistema de Profesor: Alumnos, Notas y Asistencia </h5>
                                     </div>
 
                                 </div>
@@ -301,7 +343,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">BACKEND + VIEW</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">App de tickets con Websockets.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">App de tickets con Websockets</h5>
                                     </div>
 
                                 </div>
@@ -327,7 +369,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Rest API Full, y Server Actions.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Rest API Full, y Server Actions</h5>
                                     </div>
 
                                 </div>
@@ -357,7 +399,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Clon de Red Social con likes, posts y followers.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Clon de Red Social con likes, posts y followers</h5>
                                     </div>
 
                                 </div>
@@ -386,7 +428,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Foro, con Roles y Permisos definidos.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Foro, con Roles y Permisos definidos</h5>
                                     </div>
                                 </div>
                                 <div className="overflow-hidden mr-5">
@@ -410,7 +452,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FRONTEND</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Página de Bootcamp IT.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Página de Bootcamp IT</h5>
                                     </div>
                                 </div>
                                 <div className="overflow-hidden ml-5">
@@ -437,7 +479,7 @@ export const Projects = () => {
                                 <div className="p-8">
                                     <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">BACKEND + VIEW</h4>
                                     <div className="">
-                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">CRUD: Bloc de notas.</h5>
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">CRUD: Bloc de notas</h5>
                                     </div>
                                 </div>
                             </div>
