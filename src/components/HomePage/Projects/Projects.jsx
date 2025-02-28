@@ -13,6 +13,7 @@ import projectEightImage from '../../../../public/images/laravel-breeze-permisos
 import projectNineImage from '../../../../public/images/codeimage.png'
 import projectTenImage from '../../../../public/images/project-crud-laravel/codeimage.png'
 import projectElevenImage from '../../../../public/images/laundry-app/portada-3-linkedin.jpg'
+import projectTwelveImage from '../../../../public/images/cinema/image-1-linkedin.jpg'
 
 
 import { Link } from "react-router-dom";
@@ -165,6 +166,38 @@ export const Projects = () => {
 
 
                 <div className="max-w-screen-md mx-auto lg:max-w-screen-lg grid lg:grid lg:gap-4 lg:grid-cols-2">
+
+
+                <motion.div
+                        initial="hidden"
+                        animate={elevenControls}
+                        variants={{
+                            hidden: { opacity: 0, y: -75 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+
+                    >
+                        <Link to="/proyectos/12" >
+                            <div ref={ref11} className="bg-gradient-to-br from-stone-600 to-cyan-800  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+
+                                <div className="p-8">
+                                    <h4 className="text-gray-50 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
+                                    <div className="">
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Cinema App: Compra de boletos, elección de asientos, y ratings</h5>
+                                    </div>
+
+                                </div>
+
+
+                                <div className="overflow-hidden mr-5 ">
+                                    <img className=" rounded-tr-lg rounded-br-lg mb-2" src={projectTwelveImage} alt="" />
+                                </div>
+
+
+                            </div>
+                        </Link>
+                    </motion.div>
 
                 <motion.div
                         initial="hidden"

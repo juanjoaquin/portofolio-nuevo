@@ -229,6 +229,27 @@
       ],
       "github": "https://github.com/juanjoaquin/laundry-app",
       "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 12,
+      "name": "Cinema App: Compra de boletos, elección de asientos, usuarios, y ratings",
+      "description": "Es un proyecto que realicé full stack. Con Laravel como backend, MySQL para la base de datos, y React js con TypeScript para el front. Aplicando un patrón de diseño para una mayor estructuración. Los usuarios están autenticados con JWT desde el backend, y con el frontend el token lo almaceno con LocalStorage. La idea central del proyecto es que cada persona pueda elegir los asientos de la forma más gráfica, como si estuviese en la sala pero desde la web, con una UI moderna realizada con Taiwind CSS, pero fácil de entender. No existen limites de tickets, cada usuario puede comprar los que desee, pero claramente deberá pagarlos. Con un formulario de pago, implementando Zod para las validaciones, y desde el backend con las validaciones de Laravel. Cuentan con un historial detallado sobre, cuál película fueron, el precio, los asientos, y la suma total del costo. Pueden cancelar las compra de los tickets hasta un lapso de 10 minutos, pasado ese tiempo, arrojará un error invalidando el reembolso y no se modificara el precio del pago.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel para el backend. React js & TypeScript para el frontend"],
+        "responsive": "Mobile, no desktop",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/cinema-app",
+      "live_demo": "Actualmente migrando los proyectos a otro host"
     }
 
 
