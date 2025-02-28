@@ -108,7 +108,7 @@ export const Proyecto12 = () => {
                         <span class="material-symbols-outlined">
                             keyboard_double_arrow_left
                         </span>
-                        <Link to="/proyectos/10">Anterior proyecto </Link>
+                        <Link to="/proyectos/11">Anterior proyecto </Link>
                     </div>
 
                     <div className=" flex items-center text-white bg-indigo-600 p-2 rounded-lg font-roboto hover:bg-indigo-800">

@@ -110,7 +110,7 @@ export const Proyecto11 = () => {
 
                     <div className=" flex items-center text-white bg-indigo-600 p-2 rounded-lg font-roboto hover:bg-indigo-800">
 
-                        <Link to="/proyectos/1"> Volver al primero </Link>
+                        <Link to="/proyectos/12"> Siguiente proyecto </Link>
                         <span class="material-symbols-outlined">
                             double_arrow
                         </span>
