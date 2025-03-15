@@ -250,6 +250,27 @@
       ],
       "github": "https://github.com/juanjoaquin/cinema-app",
       "live_demo": "Actualmente migrando los proyectos a otro host"
+    },
+    {
+      "id": 12,
+      "name": "Fútbol 5: Creas tu equipo, invitas a jugadores a unirse, desafias a otros equipos, y con muro de publicaciones",
+      "description": "Es una aplicación que se centra en formar equipos de fútbol 5, donde desconocidos o amigos puedan crearse equipitos para poder jugarle a otros equipos formados. Los creadores de grupos se convierten en lideres, y estos pueden aceptar solicitudes para unirse a sus equipos, o enviarsela a jugadores libres. Las solicitudes y desafios se realizan a través de gestiones, estos pueden ser aceptados o rechazados únicamente con la decision de los líderes. También se cuenta con un muro/feed para que los jugadores puedan socializar, y formar encuentros más rapido. Los jugadores pueden abandonar el equipo cuando quieran, incluso los líderes, pero estos al abandonar, el equipo se eliminará automáticamente. Además de que son los que desafian a los otros equipos. Aplicando un patrón de diseño para la estructura del proyecto, cuenta con validaciones de Zod para el front. Laravel para el backend, React & TypeScript para el front. Y MySQL para la base de datos.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel para el backend. React js & TypeScript para el frontend"],
+        "responsive": "Mobile",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/futbol-5",
+      "live_demo": "https://imgur.com/gallery/f-tbol-5-aplicaci-n-funcionamiento-general-5iyDg9W"
     }
 
 
