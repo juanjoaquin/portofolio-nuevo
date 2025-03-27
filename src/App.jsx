@@ -21,6 +21,7 @@ import { NotFound } from './components/NotFound/NotFound'
 import { Proyecto11 } from './components/HomePage/ProyectoEstatico/Proyecto11'
 import { Proyecto12 } from './components/HomePage/ProyectoEstatico/Proyecto12'
 import { Proyecto13 } from './components/HomePage/ProyectoEstatico/Proyecto13'
+import { Proyecto14 } from './components/HomePage/ProyectoEstatico/Proyecto14'
 
 
 // import { ProjectID } from './components/HomePage/Projects/ProjectID'
@@ -69,6 +70,7 @@ function App() {
     <Route path="/proyectos/11" element={<Proyecto11 />} />
     <Route path="/proyectos/12" element={<Proyecto12 />} />
     <Route path="/proyectos/13" element={<Proyecto13 />} />
+    <Route path="/proyectos/14" element={<Proyecto14 />} />
 
 
 

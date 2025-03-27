@@ -2,34 +2,38 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../../../public/images/futbol-5/imagen-1-portfolio.jpg"
-import img2 from "../../../../public/images/futbol-5/imagen-2-portfolio.jpg"
-import img3 from "../../../../public/images/futbol-5/imagen-3-portfolio.jpg"
-import img4 from "../../../../public/images/futbol-5/imagen-4-portfolio.jpg"
-import img5 from "../../../../public/images/futbol-5/imagen-5-portfolio.jpg"
-import img6 from "../../../../public/images/futbol-5/imagen-6-portfolio.jpg"
-import img7 from "../../../../public/images/futbol-5/imagen-7-portfolio.jpg"
-import img8 from "../../../../public/images/futbol-5/imagen-8-portfolio.jpg"
-import img9 from "../../../../public/images/futbol-5/imagen-9-portfolio.jpg"
-import img10 from "../../../../public/images/futbol-5/imagen-10-portfolio.jpg"
-import img11 from "../../../../public/images/futbol-5/imagen-11-portfolio.jpg"
-import img12 from "../../../../public/images/futbol-5/imagen-12-portfolio.jpg"
-import img13 from "../../../../public/images/futbol-5/imagen-13-portfolio.jpg"
-import img14 from "../../../../public/images/futbol-5/imagen-14-portfolio.jpg"
-import img15 from "../../../../public/images/futbol-5/imagen-15-portfolio.jpg"
+import img1 from "../../../../public/images/wallet/imagen-1-portfolio.jpg"
+import img2 from "../../../../public/images/wallet/imagen-2-portfolio.jpg"
+import img3 from "../../../../public/images/wallet/imagen-3-portfolio.jpg"
+import img4 from "../../../../public/images/wallet/imagen-4-portfolio.jpg"
+import img5 from "../../../../public/images/wallet/imagen-5-portfolio.jpg"
+import img6 from "../../../../public/images/wallet/imagen-6-portfolio.jpg"
+import img7 from "../../../../public/images/wallet/imagen-7-portfolio.jpg"
+import img8 from "../../../../public/images/wallet/imagen-8-portfolio.jpg"
+import img9 from "../../../../public/images/wallet/imagen-9-portfolio.jpg"
+import img10 from "../../../../public/images/wallet/imagen-10-portfolio.jpg"
+import img11 from "../../../../public/images/wallet/imagen-11-portfolio.jpg"
+import img12 from "../../../../public/images/wallet/imagen-12-portfolio.jpg"
+import img13 from "../../../../public/images/wallet/imagen-13-portfolio.jpg"
+import img14 from "../../../../public/images/wallet/imagen-14-portfolio.jpg"
+import img15 from "../../../../public/images/wallet/imagen-15-portfolio.jpg"
+import img152 from "../../../../public/images/wallet/imagen-15-2-portfolio.jpg"
+import img16 from "../../../../public/images/wallet/imagen-16-portfolio.jpg"
+import img17 from "../../../../public/images/wallet/imagen-17-portfolio.jpg"
 
 
 
 
 
-export const Proyecto13 = () => {
+
+export const Proyecto14 = () => {
     const [dataApi, setDataApi] = useState(null); 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('/ProjectsJSON.json');
-                setDataApi(response.data.projects[12]); 
+                setDataApi(response.data.projects[13]); 
             } catch (error) {
                 console.error("Error fetching data: ", error);
             }
@@ -65,12 +69,14 @@ export const Proyecto13 = () => {
                         <p className="w-auto font-montserrat pt-2 font-medium">{dataApi.technologies?.database}.</p>
                     </div>
 
-                    <div className="pt-4">
+                    <div className="pt-4 ">
                         <h1 className="font-montserrat text-base font-normal tracking-widest text-gray-400">GITHUB REPOSITORIO & LIVE HOST</h1>
-                        <div className="inline-block">
+                        <div className="inline-block ">
                             <Link to={dataApi?.github} className=" font-montserrat pt-2 font-medium underline">Mirar repositorio de Github</Link>
                             <br />
                             <Link to={dataApi?.live_demo} className=" font-montserrat pt-2 font-medium underline">Ver funcionamiento en Imgur</Link>
+                            <br />
+                            <Link to={dataApi?.behance} className=" font-montserrat pt-2 font-medium underline">Ver diseño en Behance</Link>
                         </div>
                     </div>
                 </div>
@@ -100,7 +106,9 @@ export const Proyecto13 = () => {
                     <img className="w-full  shadow-lg" src={img13} alt="" />
                     <img className="w-full  shadow-lg" src={img14} alt="" />
                     <img className="w-full  shadow-lg" src={img15} alt="" />
-
+                    <img className="w-full  shadow-lg" src={img152} alt="" />
+                    <img className="w-full  shadow-lg" src={img16} alt="" />
+                    <img className="w-full  shadow-lg" src={img17} alt="" />
                 </div>
             </div>
 
@@ -112,12 +120,12 @@ export const Proyecto13 = () => {
                         <span class="material-symbols-outlined">
                             keyboard_double_arrow_left
                         </span>
-                        <Link to="/proyectos/12">Anterior proyecto </Link>
+                        <Link to="/proyectos/13">Anterior proyecto </Link>
                     </div>
 
                     <div className=" flex items-center text-white bg-indigo-600 p-2 rounded-lg font-roboto hover:bg-indigo-800">
 
-                        <Link to="/proyectos/14"> Siguiente proyecto </Link>
+                        <Link to="/proyectos/1"> Volver al primero </Link>
                         <span class="material-symbols-outlined">
                             double_arrow
                         </span>

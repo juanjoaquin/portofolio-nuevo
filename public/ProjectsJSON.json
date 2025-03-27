@@ -271,6 +271,28 @@
       ],
       "github": "https://github.com/juanjoaquin/futbol-5",
       "live_demo": "https://imgur.com/gallery/f-tbol-5-aplicaci-n-funcionamiento-general-5iyDg9W"
+    },
+    {
+      "id": 12,
+      "name": "Wallet: App financiera. Con sistema de transferencias, pagos, y contactos",
+      "description": "Wallet es una aplicación que desarrollé como idea de las billeteras virtuales que hay actualmente pero de una forma más simplificada. La lógica se centra en la gestión de dinero permitiendo realizar transferencias a otros usuarios, recargar saldo asociando a tarjetas externas (crédito o débito) y efectuar pagos con el fondo que uno cuenta en su Wallet. La UI lo hicé de manera más simple, 'moderna', y fácil de manejar utilizando Taiwind CSS. Las características principales serían: autenticación con JWT, transferencias a otros usuarios, recargar saldo en la cuenta, historial de transacciones, gestión de pagos, notificaciones, sistema de contactos agendados, interfaz solo mobile con Taiwind, patrón de diseño para la estructura, y una arquitectura modular basa en hooks, services, y layout para el frontend. ",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel para el backend. React js & TypeScript para el frontend"],
+        "responsive": "Mobile",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"]
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+      "github": "https://github.com/juanjoaquin/wallet-app",
+      "live_demo": "https://imgur.com/gallery/wallet-financial-app-funcionamiento-rLl5YlL",
+      "behance": "https://www.behance.net/gallery/222374083/Wallet-Financial-App"
     }
 
 
