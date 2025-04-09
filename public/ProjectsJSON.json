@@ -293,7 +293,34 @@
       "github": "https://github.com/juanjoaquin/wallet-app",
       "live_demo": "https://imgur.com/gallery/wallet-financial-app-funcionamiento-rLl5YlL",
       "behance": "https://www.behance.net/gallery/222374083/Wallet-Financial-App"
+    },
+    {
+      "id": 13,
+      "name": "Ecommerce de comida: con gestión para usuarios y administradores",
+      "description": "Este proyecto es una plataforma de ecommerce de comida desarrollada con un enfoque fullstack. Permite a los usuarios explorar un catálogo de productos, agregarlos a un carrito de compras, modificarlos o quitarlos, y realizar pedidos, en los cuáles solamente funcionaran mediante un sistema de pago con tarjeta de crédito o débito. La aplicación también incluye un panel administrativo donde se puede modificar el stock de un producto, y confirmar los pedidos realizados. Útilizo Laravel Sanctum para la autenticación y la generación de tokens, una interfaz hecha con Tailwind CSS, y una arquitectura hecho con un patrón de diseño que mejora la mantenibilidad del código. Además, todo el proyecto está contenedizado con Docker.",
+      "technologies": {
+        "patterns": ["MVC"],
+        "languages": ["Laravel para el backend. React js & TypeScript para el frontend"],
+        "responsive": "Full Responsive",
+        "backend": ["", ""],
+        "frontend": ["", ""], 
+        "database": ["MySQL"],
+        "docker": "Docker"
+      },
+      "features": [
+        "Real-time file notifications",
+        "WebSocket integration",
+        "User authentication",
+        "File tracking system"
+      ],
+
+      
+      "github": "https://github.com/juanjoaquin/ecommerce-frontend",
+      "github2": "https://github.com/juanjoaquin/ecommerce-backend",
+      "live_demo": "https://imgur.com/gallery/ecommerce-food-yTfPcUA",
+      "behance": "https://www.behance.net/gallery/223337791/Ecommerce-food-Application"
     }
+
 
 
   ]

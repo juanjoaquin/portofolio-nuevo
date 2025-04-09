@@ -16,6 +16,7 @@ import projectElevenImage from '../../../../public/images/laundry-app/portada-3-
 import projectTwelveImage from '../../../../public/images/cinema/image-1-linkedin.jpg'
 import projectThirteenImage from '../../../../public/images/futbol-5/linkedin-futbol5.jpg'
 import projectFourteenImage from '../../../../public/images/wallet/imagen-1-portfolio.jpg'
+import projectFifteenImage from '../../../../public/images/ecommerce/imagen-linkedin.jpg'
 
 
 
@@ -78,6 +79,10 @@ export const Projects = () => {
     const ref12 = useRef(null);
     const isInView12 = useInView(ref12, { once: true });
     const twelveControls = useAnimation();
+
+    const ref15 = useRef(null);
+    const isInView15 = useInView(ref15, { once: true });
+    const quinceControls = useAnimation();
 
 
     useEffect(() => {
@@ -154,6 +159,12 @@ export const Projects = () => {
         }
     }, [isInView12]);
 
+    useEffect(() => {
+        if (isInView15) {
+            quinceControls.start("visible");
+        }
+    }, [isInView15]);
+
 
 
 
@@ -180,6 +191,37 @@ export const Projects = () => {
 
 
                 <div className="max-w-screen-md mx-auto lg:max-w-screen-lg grid lg:grid lg:gap-4 lg:grid-cols-2">
+
+                <motion.div
+                        initial="hidden"
+                        animate={quinceControls}
+                        variants={{
+                            hidden: { opacity: 0, y: -75 },
+                            visible: { opacity: 1, y: 0 },
+                        }}
+                        transition={{ duration: 0.5, delay: 0.25 }}
+
+                    >
+                        <Link to="/proyectos/15" >
+                            <div ref={ref15} className="bg-gradient-to-r from-orange-600 to-orange-400  m-4 shadow-lg transition transform duration-300 hover:scale-105">
+
+                                <div className="p-8">
+                                    <h4 className="text-gray-800 uppercase text-sm font-medium tracking-wider mb-2 opacity-60 load-hidden">FULL STACK</h4>
+                                    <div className="">
+                                        <h5 className="text-white font-roboto text-4xl pt-3 font-bold">Ecommerce de comida: gestión para usuarios y administradores </h5>
+                                    </div>
+
+                                </div>
+
+
+                                <div className="overflow-hidden mr-5 ">
+                                    <img className=" rounded-tr-lg rounded-br-lg mb-2" src={projectFifteenImage} alt="" />
+                                </div>
+
+
+                            </div>
+                        </Link>
+                    </motion.div>
 
 
                 <motion.div
